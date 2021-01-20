@@ -6,7 +6,7 @@ import Gallery from './pages/Gallery';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import SignUp from './pages/SignUp'
-import Banner from './components/Banner/Banner';
+
 
 
 

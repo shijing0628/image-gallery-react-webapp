@@ -21,7 +21,7 @@ export const SliderData = [
   alt: 'gallery photo 1'
  },
  {
-  title: 'Photograph Room',
+  title: 'Acrylic Painting Room',
   path: '/gallery',
   label: 'View Gallery',
   image: ImageThree,
@@ -36,33 +36,33 @@ export const SliderData = [
  }
 ];
 
-export const SliderDataTwo = [
- {
-  title: 'Gallery Oil Painting Room',
-  path: '/gallery',
-  label: 'View Gallery',
-  image: ImageOne,
-  alt: 'gallery photo 1'
- },
- {
-  title: 'Gallery Oil Painting Room',
-  path: '/gallery',
-  label: 'View Gallery',
-  image: ImageTwo,
-  alt: 'gallery photo 1'
- },
- {
-  title: 'Gallery Oil Painting Room',
-  path: '/gallery',
-  label: 'View Gallery',
-  image: ImageThree,
-  alt: 'gallery photo 1'
- },
- {
-  title: 'Gallery Oil Painting Room',
-  path: '/gallery',
-  label: 'View Gallery',
-  image: ImageFour,
-  alt: 'gallery photo 1'
- }
-]; 
+// export const SliderDataTwo = [
+//  {
+//   title: 'Gallery Oil Painting Room',
+//   path: '/gallery',
+//   label: 'View Gallery',
+//   image: ImageOne,
+//   alt: 'gallery photo 1'
+//  },
+//  {
+//   title: 'Gallery Oil Painting Room',
+//   path: '/gallery',
+//   label: 'View Gallery',
+//   image: ImageTwo,
+//   alt: 'gallery photo 1'
+//  },
+//  {
+//   title: 'Gallery Oil Painting Room',
+//   path: '/gallery',
+//   label: 'View Gallery',
+//   image: ImageThree,
+//   alt: 'gallery photo 1'
+//  },
+//  {
+//   title: 'Gallery Oil Painting Room',
+//   path: '/gallery',
+//   label: 'View Gallery',
+//   image: ImageFour,
+//   alt: 'gallery photo 1'
+//  }
+// ]; 

@@ -2,5 +2,13 @@
 
 2021-1
 
+```
+npm install
+```
+
+```
+npm start
+```
+
 - navbar: class component + css file
-- slider: function component + styled-components
+- slider: function component + styled-components: auto display feature
