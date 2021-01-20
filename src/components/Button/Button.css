@@ -1,5 +1,5 @@
 :root {
-  --primary: #1888ff;
+  --primary: #b3bcf5;
 }
 
 .btn {
@@ -7,17 +7,15 @@
   border-radius: 4px;
   outline: none;
   border: none;
-  font-size: 18px;
-  color: #fff;
+  font-size: 16px;
   cursor: pointer;
-  background-color: var(--primary);
+  background-color: transparent;
+  color: #fff;
 }
 
 .btn:hover {
   padding: 6px 18px;
   transition: all 0.3s ease-out;
-  background-color: transparent;
-  color: #fff;
   border-radius: 4px;
   border: 2px solid var(--primary);
   transition: all 0.3s ease-out;

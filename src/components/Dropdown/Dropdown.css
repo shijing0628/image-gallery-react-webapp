@@ -8,14 +8,20 @@
 }
 
 .dropdown-menu li {
-  background: #1888ff;
+  background: #9c6ade;
   cursor: pointer;
 }
 
 .dropdown-menu li:hover {
-  background: #5cabff;
+  background: #e3d0ff;
 }
-
+.item-title {
+  color: #fff;
+  transition: all 0.5;
+}
+.item-title:hover {
+  color: #230051;
+}
 .dropdown-menu.clicked {
   display: none;
 }
