@@ -42,7 +42,7 @@ export class Navbar extends Component {
   return (
    <nav className='navbar'>
     <Link to='/' className='navbar-logo'>
-     Art Gallery
+     Art Gallery <i className="fab fa-firstdraft"></i>
     </Link>
     <div className="menu-icon" onClick={this.handleClick}>
      <i className={click ? 'fa fa-times' : 'fa fa-bars'}></i>

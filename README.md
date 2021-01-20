@@ -2,4 +2,5 @@
 
 2021-1
 
-- component: navbar: class component
+- navbar: class component + css file
+- slider: function component + styled-components
