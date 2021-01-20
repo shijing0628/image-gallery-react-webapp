@@ -1,9 +1,10 @@
 import React from 'react'
+import GalleryImages from '../components/Gallery/GalleryImages'
 
 function Gallery() {
  return (
   <div>
-   gallery
+   <GalleryImages />
   </div>
  )
 }

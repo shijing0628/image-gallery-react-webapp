@@ -11,4 +11,5 @@ npm start
 ```
 
 - navbar: class component + css file
-- slider: function component + styled-components: auto display feature
+- home page: function component + styled-components: auto display feature
+- gallery page:axios, material-UI,hooks
