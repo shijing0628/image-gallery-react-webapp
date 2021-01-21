@@ -73,8 +73,8 @@ export class Navbar extends Component {
       </Link>
      </li>
      <li className='nav-item'>
-      <Link to='/sign-up' className='nav-links-mobile' onClick={this.closeMobileMenu}>
-       Sign up
+      <Link to='/register' className='nav-links-mobile' onClick={this.closeMobileMenu}>
+       Register
       </Link>
      </li>
     </ul>

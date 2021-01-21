@@ -85,6 +85,7 @@ max-width:150px;
 text-align:center;
 box-shadow:0px 2px 5px 5px rgba(0,0,0,0.2);
 transition: all 0.5s;
+border-radius:10px;
 
 &:hover, &:active{
  background-color:#F49342;
