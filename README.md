@@ -14,7 +14,10 @@ npm start
 - home page: function component + styled-components: auto display feature
 - gallery page:axios call from unsplash api, material-UI,hooks, pagination
 - https://github.com/theanam/react-awesome-lightbox for lightbox feature in gallery page
-- contact us form : after input validate info, button will showe success submit. This form link to express project of FS1020, we can get input data in data/entiresDB.json
+- contact us form : after input validate info, button will showe success submit. This form link to express project of FS1020 PORT 5000, we can get input data in data/entiresDB.json
+- register (sign up & login page)
+- yup plugin for validation form
+- formik plugin to build form
 
 ![](2021-01-20-19-52-16.png)
 <br>

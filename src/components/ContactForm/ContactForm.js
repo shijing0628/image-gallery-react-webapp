@@ -16,8 +16,6 @@ class ContactForm extends Component {
   errors: {}
  };
 
-
-
  resetForm = () => {
   this.setState({
    name: "",
@@ -31,6 +29,8 @@ class ContactForm extends Component {
    this.setState({ sent: false });
   }, 3000);
  };
+
+
  // validate name phone number and content
  validate = () => {
   let temp = [];
@@ -63,6 +63,9 @@ class ContactForm extends Component {
    this.setState({ email: e.target.value, emailError: false });
   }
  }
+
+
+
  // submit contact form
  formSubmit = async (e) => {
   e.preventDefault();
@@ -79,6 +82,7 @@ class ContactForm extends Component {
    phoneNumber: this.state.phoneNumber,
    subject: this.state.content,
   };
+
 
   try {
    await axios.post("http://localhost:5000/contact_form/entries", data);
@@ -129,8 +133,6 @@ class ContactForm extends Component {
        required
        type="email"
        helperText="This should input validate email address."
-       fullWidth
-       margin="normal"
        fullWidth
        InputLabelProps={{
         shrink: true,
