@@ -10,7 +10,7 @@ export const colors = {
  dark1: '#1f2937',
  dark2: '#4b5563',
  dark3: '#9ca3af',
- red: '#ED6347'
+ red: '#F49342'
 }
 
 // components
