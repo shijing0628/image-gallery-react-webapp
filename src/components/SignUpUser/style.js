@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 
 // login page style 
 export const colors = {
-    primary: '#fff',
-    theme: '#50248F',
-    light1: '#f3f4f6',
-    light2: '#e5e7eb',
-    dark1: '#1f2937',
-    dark2: '#4b5563',
-    dark3: '#9ca3af',
-    red: '#F49342'
+ primary: '#fff',
+ theme: '#50248F',
+ light1: '#f3f4f6',
+ light2: '#e5e7eb',
+ dark1: '#1f2937',
+ dark2: '#4b5563',
+ dark3: '#9ca3af',
+ red: '#F49342'
 }
 
 // components
@@ -59,7 +59,7 @@ export const StyledFormArea = styled.div`
 background-color:${props => props.bg || colors.primary};
 text-align:center;
 padding:40px 40px;
-position: absolute; 
+position: absolute;
 top: 50%;
 transform: translate(0,-50%);
 `;

@@ -51,7 +51,16 @@ background-size:cover;
 background-position:center;
 margin:auto;
 `;
-
+export const StyledFormArea = styled.div`
+background-color:#B6ECEB;
+width:50%;
+text-align:center;
+padding:40px 40px;
+position: absolute; 
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+`;
 export const StyledButton = styled(Link)`
 padding:10px;
 width:150px;

@@ -8,7 +8,8 @@ import Contact from './pages/Contact';
 import Register from './pages/Register'
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
-
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
+import Dashboard from './pages/Dashboard';
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/register' component={Register}></Route>
         <Route path='/auth' component={Login}></Route>
         <Route path='/user' component={SignUp}></Route>
+        <Route path='/dashboard' component={Dashboard}></Route>
       </Switch>
 
     </Router>

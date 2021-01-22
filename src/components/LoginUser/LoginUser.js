@@ -6,7 +6,8 @@ import { ButtonGroup } from '@material-ui/core';
 import { TextInput } from '../FormLib/FormLib'
 //import formik
 import { Formik, Form } from 'formik';
-
+//signin loading
+import Loader from 'react-loader-spinner';
 
 //icons
 import { FiMail, FiLock } from 'react-icons/fi';
@@ -37,7 +38,7 @@ function LoginUser() {
        console.log(values)
       }}
      >
-      {() => (
+      {({ isSubmitting }) => (
        <Form>
         <TextInput
          name='email'
@@ -55,13 +56,24 @@ function LoginUser() {
         />
         <br></br>
         <ButtonGroup>
-         <StyledFormButton type='submit'>
+         {!isSubmitting && <StyledFormButton type='submit'>
           Login
-         </StyledFormButton>
+         </StyledFormButton>}
+
+         {/* add login button loader */}
+         {isSubmitting && (
+          <Loader
+           type='ThreeDots'
+           color={colors.theme}
+           height={49}
+           width={100} />
+         )}
         </ButtonGroup>
        </Form>
       )}
      </Formik>
+
+
      {/* signup link */}
      <br></br>
      <ExtraText>

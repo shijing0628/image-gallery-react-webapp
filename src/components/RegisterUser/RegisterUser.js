@@ -6,36 +6,36 @@ import Logo from '../../images/logo.png';
 
 
 function RegisterUser() {
- return (
-  <>
-   <StyledContainer>
-    <div style={{
-     position: 'absolute',
-     top: '150px',
-     left: '0px',
-     width: '100%',
-     display: 'flex',
-     justifyContent: 'flex-start'
-    }}>
-     <Avatar image={Logo} />
-    </div>
-    <Styledtitle size={65}>
-     Welcome to Art Gallery
+  return (
+    <>
+      <StyledContainer>
+        <div style={{
+          position: 'absolute',
+          top: '150px',
+          left: '0px',
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'flex-start'
+        }}>
+          <Avatar image={Logo} />
+        </div>
+        <Styledtitle size={65}>
+          Welcome to Art Gallery
     </Styledtitle>
-    <StyledSubTitle size={27}>
-     Feel Free to Register
+        <StyledSubTitle size={27}>
+          Feel Free to Register
     </StyledSubTitle>
-    <ButtonGroup>
-     <StyledButton to='/auth'>
-      Login
+        <ButtonGroup>
+          <StyledButton to='/auth'>
+            Login
     </StyledButton>
-     <StyledButton to='/user'>
-      SignUp
+          <StyledButton to='/user'>
+            SignUp
     </StyledButton>
-    </ButtonGroup>
-   </StyledContainer>
-  </>
- )
+        </ButtonGroup>
+      </StyledContainer>
+    </>
+  )
 }
 
 export default RegisterUser
