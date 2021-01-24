@@ -6,11 +6,11 @@ const loginMyUser = async (credentials, history, setFieldError, setSubmitting) =
   credentials,
   { headers: { 'Content-Type': 'application/json' } }
  ).then((response) => {
-  const { data, token } = response;
+  const { data } = response;
 
   const userData = data.data[data.data.length - 1];
 
-  sessionService.saveSession(token).then(() => {
+  sessionService.saveSession(data.token).then(() => {
    sessionService.saveUser(userData).then(() => {
 
     history.push('/dashboard');

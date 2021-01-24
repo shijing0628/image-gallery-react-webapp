@@ -7,7 +7,8 @@ import { sessionService } from 'redux-react-session';
 const initialState = {};
 const middlewares = [thunk];
 
-const store = createStore(rootReducer, initialState, compose(applyMiddleware(...middlewares)));
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(rootReducer, initialState, composeEnhancers(applyMiddleware(...middlewares)));
 
 sessionService.initSessionService(store, {
  driver: "COOKIES"
