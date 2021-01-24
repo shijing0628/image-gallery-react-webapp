@@ -52,7 +52,7 @@ background-position:center;
 margin:auto;
 `;
 export const StyledFormArea = styled.div`
-background-color:#B6ECEB;
+background-color:#F5F0FC;
 width:50%;
 text-align:center;
 padding:40px 40px;

@@ -88,7 +88,7 @@ transition: all 0.5s;
 border-radius:10px;
 
 &:hover, &:active{
- background-color:#F49342;
+ background-color:#ED6347;
  color:#230051;
  text-decoration: none;
  border:none;
@@ -117,7 +117,7 @@ user-select:none;
 transition:0.3s;
 
 &:hover {
- background:#F49342;
+ background:#ED6347;
  transform:scale(1.05);
 }
 `;

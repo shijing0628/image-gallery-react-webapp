@@ -74,7 +74,7 @@ class ContactForm extends Component {
    name: this.state.name,
    email: this.state.email,
    phoneNumber: this.state.phoneNumber,
-   subject: this.state.content,
+   content: this.state.content,
   };
 
   if (this.validate()) {
