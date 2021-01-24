@@ -81,6 +81,7 @@ class ContactForm extends Component {
    this.setState({
     buttonText: "...sending",
    });
+
    try {
     await axios.post("http://localhost:5000/contact_form/entries", data);
     this.setState({ sent: true }, this.resetForm());
@@ -93,14 +94,10 @@ class ContactForm extends Component {
      buttonText: "Send Message",
     });
    }
-
   }
-
-
-
-
-
  };
+
+
 
  render() {
   return (
