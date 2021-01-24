@@ -7,6 +7,10 @@ import axios from 'axios';
 import { useSelector } from 'react-redux'
 import { signOutMyUser } from '../../auth/actions/userActions'
 import { connect } from "react-redux";
+import { Link } from 'react-router-dom'
+
+
+
 
 function DashboardTable({ signOutMyUser }) {
  const authenticated = useSelector(store => store.session.authenticated);
@@ -15,15 +19,20 @@ function DashboardTable({ signOutMyUser }) {
 
  useEffect(() => {
   async function fetchData() {
-   let token = await sessionService.loadSession();
-   console.log(token)
-   let { data: { entriesData } } = await axios.get('http://localhost:5000/contact_form/entries', {
-    headers: {
-     'Content-Type': 'application/json',
-     'Authorization': `Bearer ${token}`
-    }
-   })
-   setEntriesData(entriesData)
+   try {
+    let token = await sessionService.loadSession();
+    console.log(token)
+    let { data: { entriesData } } = await axios.get('http://localhost:5000/contact_form/entries', {
+     headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${token}`
+     }
+    })
+    setEntriesData(entriesData)
+   } catch (err) {
+    console.log(err)
+   }
+
   }
   fetchData()
  }, [])
@@ -40,9 +49,13 @@ function DashboardTable({ signOutMyUser }) {
         ))
         }
         < ButtonGroup >
-         <StyledButton to='/' onClick={signOutMyUser}>
+
+         <button
+          onClick={signOutMyUser}>
           Logout
-       </StyledButton>
+          </button>
+
+
         </ButtonGroup>
        </div>
        : <h1>you need login</h1>
