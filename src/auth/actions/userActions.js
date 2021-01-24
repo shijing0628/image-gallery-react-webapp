@@ -48,8 +48,8 @@ const signUpMyUser = async (credentials, history, setSubmitting, setFieldError) 
 
 }
 
-const signOutMyUser = () => {
-
+const signOutMyUser = async () => {
+ await sessionService.deleteSession();
 }
 
 export {

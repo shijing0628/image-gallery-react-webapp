@@ -5,10 +5,10 @@ import { useEffect } from 'react';
 import { sessionService } from 'redux-react-session'
 import axios from 'axios';
 import { useSelector } from 'react-redux'
+import { signOutMyUser } from '../../auth/actions/userActions'
+import { connect } from "react-redux";
 
-
-
-function DashboardTable() {
+function DashboardTable({ signOutMyUser }) {
  const authenticated = useSelector(store => store.session.authenticated);
  const [entriesData, setEntriesData] = useState([]);
 
@@ -40,7 +40,7 @@ function DashboardTable() {
         ))
         }
         < ButtonGroup >
-         <StyledButton to='/'>
+         <StyledButton to='/' onClick={signOutMyUser}>
           Logout
        </StyledButton>
         </ButtonGroup>
@@ -55,4 +55,4 @@ function DashboardTable() {
  )
 }
 
-export default DashboardTable;
+export default connect(null, { signOutMyUser })(DashboardTable);
