@@ -18,9 +18,11 @@ Enable backend repo https://github.com/shijing0628/FS1020-course-project-final a
 npm run dev
 ```
 
+**Image gallery web app project introduction**
+
 - navbar: class component + css file
 - home page: function component + styled-components: auto display feature
-- gallery page:axios call from unsplash api, material-UI,hooks, pagination
+- gallery page:axios call from unsplash api, material-UI,hooks, pagination (https://unsplash.com/documentation#search-photos)
 - https://github.com/theanam/react-awesome-lightbox plugin for lightbox feature in gallery page
 - contact us form : after input validate info, button will show success submit. This form link to express project of FS1020 PORT 5000, we can receive data in data/entiresDB.json
 - register page includes (sign up & login page)
@@ -28,9 +30,12 @@ npm run dev
 - formik plugin to build form (https://formik.org/docs/api/useField)
 - react-loader-spinner plugin after click login, showing a loading status
 - auth uses redux
-
-![](2021-01-20-19-52-16.png)
-<br>
+- redux-react-session to save token getting from server side, save to local cookies, once receive it, load session to dashboard.js file.
+- axios fetch data from server (response.data is what we need all info)
+- If validation failed, we will get 400 error and in userAction.js file-> loginUser function will catch that error, and we can display the error message by using formik setFieldError. (each input tag has to include name="email" etc because the setFieldError distingush the error info from name property.)
+  <br>
+  ![](2021-01-20-19-52-16.png)
+  <br>
 
 ![](2021-01-20-19-52-59.png)
 <br>
