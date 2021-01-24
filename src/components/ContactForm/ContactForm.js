@@ -69,12 +69,6 @@ class ContactForm extends Component {
  // submit contact form
  formSubmit = async (e) => {
   e.preventDefault();
-  if (this.validate())
-   console.log('validate')
-
-  this.setState({
-   buttonText: "...sending",
-  });
 
   let data = {
    name: this.state.name,
@@ -83,16 +77,29 @@ class ContactForm extends Component {
    subject: this.state.content,
   };
 
-
-  try {
-   await axios.post("http://localhost:5000/contact_form/entries", data);
-   this.setState({ sent: true }, this.resetForm());
+  if (this.validate()) {
    this.setState({
-    buttonText: "Success Send",
+    buttonText: "...sending",
    });
-  } catch (error) {
-   console.log(error);
+   try {
+    await axios.post("http://localhost:5000/contact_form/entries", data);
+    this.setState({ sent: true }, this.resetForm());
+    this.setState({
+     buttonText: "Success Send",
+    });
+   } catch (error) {
+    console.log(error);
+    this.setState({
+     buttonText: "Send Message",
+    });
+   }
+
   }
+
+
+
+
+
  };
 
  render() {
@@ -151,7 +158,6 @@ class ContactForm extends Component {
        value={this.state.phoneNumber}
        onChange={(e) => this.setState({ phoneNumber: e.target.value })}
        helperText="This field is required min 9 number"
-       required
        fullWidth
        InputLabelProps={{
         shrink: true,
@@ -170,7 +176,6 @@ class ContactForm extends Component {
        rows={10}
        value={this.state.content}
        onChange={(e) => this.setState({ content: e.target.value })}
-       required
        type="text"
        helperText="This field is required"
        fullWidth

@@ -24,7 +24,7 @@ function App() {
         <Route path='/contact' component={Contact}></Route>
         <Route path='/register' component={Register}></Route>
         <Route path='/auth' component={Login}></Route>
-        <Route path='/user' component={SignUp}></Route>
+        <Route path='/users' component={SignUp}></Route>
         <Route path='/dashboard' component={Dashboard}></Route>
       </Switch>
 

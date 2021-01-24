@@ -29,7 +29,7 @@ function RegisterUser() {
           <StyledButton to='/auth'>
             Login
     </StyledButton>
-          <StyledButton to='/user'>
+          <StyledButton to='/users'>
             SignUp
     </StyledButton>
         </ButtonGroup>

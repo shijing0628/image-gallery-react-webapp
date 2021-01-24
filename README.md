@@ -21,6 +21,7 @@ npm start
 - yup plugin for validation form
 - formik plugin to build form (https://formik.org/docs/api/useField)
 - react-loader-spinner plugin after click login, showing a loading status
+- auth uses redux
 
 ![](2021-01-20-19-52-16.png)
 <br>
