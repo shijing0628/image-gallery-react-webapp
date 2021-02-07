@@ -15,23 +15,25 @@ function RegisterUser() {
           left: '0px',
           width: '100%',
           display: 'flex',
-          justifyContent: 'flex-start'
+          justifyContent: 'flex-start',
+          zIndex: '10'
+
         }}>
           <Avatar image={Logo} />
         </div>
         <Styledtitle size={65}>
           Welcome to Art Gallery
-    </Styledtitle>
+        </Styledtitle>
         <StyledSubTitle size={27}>
           Feel Free to Register
-    </StyledSubTitle>
+        </StyledSubTitle>
         <ButtonGroup>
           <StyledButton to='/auth'>
             Login
-    </StyledButton>
+        </StyledButton>
           <StyledButton to='/users'>
             SignUp
-    </StyledButton>
+        </StyledButton>
         </ButtonGroup>
       </StyledContainer>
     </>

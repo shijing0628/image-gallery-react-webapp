@@ -20,7 +20,7 @@ min-height:100vh;
 display:flex;
 justify-content:center;
 align-item:center;
-background:linear-gradient(0deg,rgba(0,0,0,.2),rgba(0,0,0,.3)), url(${background});
+
 background-size:cover;
 background-attachment:fixed;
 flex-direction:column;

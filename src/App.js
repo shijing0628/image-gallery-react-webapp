@@ -10,6 +10,7 @@ import SignUp from './pages/SignUp';
 import Login from './pages/Login';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 import Dashboard from './pages/Dashboard';
+import History from './pages/History'
 
 
 
@@ -26,6 +27,7 @@ function App() {
         <Route path='/auth' component={Login}></Route>
         <Route path='/users' component={SignUp}></Route>
         <Route path='/dashboard' component={Dashboard}></Route>
+        <Route path='/history' component={History}></Route>
       </Switch>
 
     </Router>
